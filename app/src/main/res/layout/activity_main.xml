@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<EditText
+    android:id="@+id/user_name"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="5dp"
+    android:hint="username"
+    />
+
+   <EditText
+       android:id="@+id/pass_word"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:hint="password"
+       android:layout_margin="5dp"
+       />
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="insert"
+        android:onClick="Add_button_clicked"/>
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="load"
+        android:onClick="Load_button_clicked"/>
+
+    <Button
+        android:id="@+id/srch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="search"
+        android:onClick="srch_button_clicked"/>
+
+
+
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"></ListView>
+
+
+</LinearLayout>
